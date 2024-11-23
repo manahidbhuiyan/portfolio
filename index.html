@@ -29,34 +29,36 @@
     <!-- ======= Aside start ======== -->
     <div class="aside">
       <div class="logo">
-        <a href="#"><img src="./pic/mahabub (1).svg" class="logo-image" alt=""></a>
+        <a href="#home"><img src="./pic/mahabub (1).svg" class="logo-image" alt=""></a>
         <!-- <span>MAHABUB</span> -->
       </div>
       <div class="nav-toggler">
         <span></span>
       </div>
       <ul class="nav">
-        <li><a href="#" class="active"><i class="fa fa-home"></i> Home </a></li>
-        <li><a href="#"><i class="fa fa-user"></i> About </a></li>
-        <li><a href="#"><i class="fa fa-list"></i> Services </a></li>
-        <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio </a></li>
-        <li><a href="#"><i class="fa fa-comments"></i> Contacts </a></li>
+        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home </a></li>
+        <li><a href="#about"><i class="fa fa-user"></i> About </a></li>
+        <li><a href="#service"><i class="fa fa-list"></i> Services </a></li>
+        <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio </a></li>
+        <li><a href="#contact"><i class="fa fa-comments"></i> Contacts </a></li>
       </ul>
     </div>
     <!-- ======= Aside stop ======== -->
     <!-- ======== Main Content Start ====== -->
     <div class="main-content">
       <!-- Home Section Start -->
-      <section class="home section hidden">
+      <section class="home section active" id="home">
         <div class="container">
           <div class="row">
             <div class="home-info pad-15">
               <h3 class="hello">Hello, my name is <span class="name">Mahabub Alam</span></h3>
-              <h3 class="my-profession">I'm a <span class="typing">Jr. full stack developer</span></h3>
-              <p>An innovative thinker with a commitment to continuous learning and professional growth. Adept at
-                blending technical skills with creative problem-solving to develop high-quality digital solutions that
-                enhance user satisfaction and meet project goals.</p>
-              <a href="#contact" class="btn hire-me">Hire Me</a>
+              <h3 class="my-profession" style="padding-bottom: 5px;">I'm a <span class="typing">Jr. full stack developer</span></h3>
+              <p>An innovative thinker with 3+ years of experience in web design and over 2 years as a full-stack
+                developer, specializing in front-end development. Skilled in blending technical expertise with creative
+                problem-solving, I deliver high-quality, dynamic, and user-friendly digital solutions. Committed to
+                continuous learning and professional growth, I excel in creating seamless experiences that align with
+                project goals and enhance user satisfaction.</p>
+              <a href="#" class="btn">Download CV</a>
             </div>
             <div class="home-img pad-15">
               <img src="./pic/full-image.jpg" alt="">
@@ -66,7 +68,7 @@
       </section>
       <!-- Home Section Stop -->
       <!-- About Section Start -->
-      <section class="about section">
+      <section class="about section" id="about">
         <div class="container">
           <div class="row">
             <div class="section-title pad-15">
@@ -118,8 +120,7 @@
                   </div>
                   <div class="row">
                     <div class="buttons pad-15">
-                      <a href="#" class="btn">Download CV</a>
-                      <a href="#contact" class="btn hire-me">Hire Me</a>
+                      <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                     </div>
                   </div>
                 </div>
@@ -157,12 +158,112 @@
                   </div>
                 </div>
               </div>
+              <!-- education -->
               <div class="row">
                 <div class="education pad-15">
                   <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box">
+                      <div class="timeline shadow-dark">
+                        <!-- timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2018 - 2021
+                          </h3>
+                          <h4 class="timeline-title">Bachelor of Science in Computer Science and Engineering</h4>
+                          <h4 class="timeline-sub-title">Daffodil International University , Dhanmondi Dhaka</h4>
+                          <p class="timeline-text">I have successfully completed my BSc, graduating with a CGPA of 3.55 out of 4.</p>
+                        </div>
+                        <!-- timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2016 - 2017
+                          </h3>
+                          <h4 class="timeline-title">Higher Secondary School Certificate ( HSC )</h4>
+                          <h4 class="timeline-sub-title">Milestone College , Uttara Dhaka</h4>
+                          <p class="timeline-text">I have successfully completed my HSC, graduating with a GPA of 4.83 out of 5.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="education pad-15">
+                  <h3 class="title">Certificate</h3>
+                  <div class="row">
+                    <div class="timeline-box">
+                      <div class="timeline shadow-dark">
+                         <!-- timeline item -->
+                         <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> January 2024 - April 2024
+                          </h3>
+                          <h4 class="timeline-title">COMPLETE MASTERING TAILWIND CSS</h4>
+                          <h4 class="timeline-sub-title">OSTAD PLATFORM</h4>
+                          <!-- <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolore
+                            hic sapiente at magni quidem, vitae minima dicta aperiam, itaque veritatis? Saepe dolore
+                            architecto aliquam nam sapiente deleniti cum? Quo!</p> -->
+                        </div>
+                        <!-- timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> May 2018 - January 2019
+                          </h3>
+                          <h4 class="timeline-title">COMPLETE FULL STACK WEB DEVELOPMENT</h4>
+                          <h4 class="timeline-sub-title">SHIKHBE SHOBAI PLATFORM</h4>
+                          <!-- <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolore
+                            hic sapiente at magni quidem, vitae minima dicta aperiam, itaque veritatis? Saepe dolore
+                            architecto aliquam nam sapiente deleniti cum? Quo!</p> -->
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <!-- certificate -->
+              <div class="row">
                 <div class="experience pad-15">
                   <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box">
+                      <div class="timeline shadow-dark">
+                        <!-- timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> May 2022 - Present
+                          </h3>
+                          <h4 class="timeline-title">Jr. Full Stack Developer</h4>
+                          <h4 class="timeline-sub-title">Amana Group Limited , Uttara, Dhaka</h4>
+                          <ul >
+                            <li>Involved in all phases of projects, including analysis, design, development, debugging, testing, and deployment.</li>
+                            <li>Adapted designs to accommodate different mobile screen sizes.</li>
+                            <li>Assisted back-end developers with coding and troubleshooting.</li>
+                            <li>Collaborated with designers, engineers, and product managers to build exceptional user experiences.</li>
+                          </ul>
+                        </div>
+                        <!-- timeline item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> February 2022 - April 2022
+                          </h3>
+                          <h4 class="timeline-title">Web Designer</h4>
+                          <h4 class="timeline-sub-title">TechGenBD Limited, Banasree Dhaka</h4>
+                          <ul>
+                            <li>Used markup languages like HTML to create user-friendly, effective, and appealing web pages.</li>
+                            <li>Adapted designs to accommodate different mobile screen sizes.</li>
+                            <li>Met with clients to discuss requirements and project progress.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -170,6 +271,246 @@
         </div>
       </section>
       <!-- About Section Stop -->
+      <!-- Services Section Start -->
+      <section class="service section" id="service">
+        <div class="container">
+          <div class="row">
+            <div class="section-title pad-15">
+              <h2>Service</h2>
+            </div>
+            <div class="row">
+              <!-- Service item start -->
+              <div class="service-item pad-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-mobile-alt"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga expedita vel exercitationem
+                    laboriosam quibusdam possimus temporibus? Ullam quae porro corrupti sequi perspiciatis quisquam
+                    rerum, nihil, harum nemo officia expedita reiciendis?</p>
+                </div>
+              </div>
+              <!-- Service item start -->
+              <div class="service-item pad-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-laptop-code"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga expedita vel exercitationem
+                    laboriosam quibusdam possimus temporibus? Ullam quae porro corrupti sequi perspiciatis quisquam
+                    rerum, nihil, harum nemo officia expedita reiciendis?</p>
+                </div>
+              </div>
+              <!-- Service item start -->
+              <div class="service-item pad-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-palette"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga expedita vel exercitationem
+                    laboriosam quibusdam possimus temporibus? Ullam quae porro corrupti sequi perspiciatis quisquam
+                    rerum, nihil, harum nemo officia expedita reiciendis?</p>
+                </div>
+              </div>
+              <!-- Service item start -->
+              <div class="service-item pad-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-bullhorn"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga expedita vel exercitationem
+                    laboriosam quibusdam possimus temporibus? Ullam quae porro corrupti sequi perspiciatis quisquam
+                    rerum, nihil, harum nemo officia expedita reiciendis?</p>
+                </div>
+              </div>
+              <!-- Service item start -->
+              <div class="service-item pad-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga expedita vel exercitationem
+                    laboriosam quibusdam possimus temporibus? Ullam quae porro corrupti sequi perspiciatis quisquam
+                    rerum, nihil, harum nemo officia expedita reiciendis?</p>
+                </div>
+              </div>
+              <!-- Service item start -->
+              <div class="service-item pad-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-code"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga expedita vel exercitationem
+                    laboriosam quibusdam possimus temporibus? Ullam quae porro corrupti sequi perspiciatis quisquam
+                    rerum, nihil, harum nemo officia expedita reiciendis?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section Stop -->
+      <!-- Portfolio Section Start -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title pad-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading pad-15">
+              <h2>My Last Projects :</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- portfolio item start -->
+            <div class="portfolio-item pad-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="./pic/portfolio/crowdme.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item stop -->
+            <!-- portfolio item start -->
+            <div class="portfolio-item pad-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="./pic/portfolio/daffodil.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item stop -->
+            <!-- portfolio item start -->
+            <div class="portfolio-item pad-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="./pic/portfolio/food.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item stop -->
+            <!-- portfolio item start -->
+            <div class="portfolio-item pad-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="./pic/portfolio/onlinebus.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item stop -->
+            <!-- portfolio item start -->
+            <div class="portfolio-item pad-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="./pic/portfolio/trillo.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item stop -->
+            <!-- portfolio item start -->
+            <div class="portfolio-item pad-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="./pic/portfolio/schoolar.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item stop -->
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio Section Stop -->
+      <!-- Contact Section Start -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title pad-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <h3 class="contact-title">have You Any Question ?</h3>
+          <h4 class="contact-sub-title">I'M At YOUR SERVICES</h4>
+          <div class="row">
+            <!-- contact info item start -->
+            <div class="contact-info-item pad-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Call Us On</h4>
+              <p>+88 01834960466</p>
+            </div>
+            <!-- contact info item stop -->
+            <!-- contact info item start -->
+            <div class="contact-info-item pad-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4>House</h4>
+              <p>Uttra, dhaka</p>
+            </div>
+            <!-- contact info item stop -->
+            <!-- contact info item start -->
+            <div class="contact-info-item pad-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>ma.nahid960@gmail.com</p>
+            </div>
+            <!-- contact info item stop -->
+            <!-- contact info item start -->
+            <div class="contact-info-item pad-15">
+              <div class="icon"><i class="fa fa-globe-asia"></i></div>
+              <h4>Website</h4>
+              <p>www.mahabub.site</p>
+            </div>
+            <!-- contact info item stop -->
+          </div>
+          <h3 class="contact-title">SEND ME AN EMAIL</h3>
+          <h4 class="contact-sub-title">I'M VERY RESPONSIVE TO MESSAGES</h4>
+          <!-- contact Form -->
+          <div class="row">
+            <div class="contact-form pad-15">
+              <div class="row">
+                <div class="form-item col-6 pad-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                </div>
+                <div class="form-item col-6 pad-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 pad-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Subject">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 pad-15">
+                  <div class="form-group">
+                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 pad-15">
+                  <div class="form-group">
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section Stop -->
     </div>
     <!-- ======== Main Content Stop ======= -->
   </div>
