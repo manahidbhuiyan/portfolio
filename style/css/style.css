@@ -49,19 +49,19 @@ a {
   overflow-x: hidden;
   transition: all 0.3s ease;
 }
-.section.back-section{
+.section.back-section {
   z-index: 1;
 }
-.section.active{
+.section.active {
   z-index: 2;
   opacity: 1;
   animation: slideSection 1s ease;
 }
 @keyframes slideSection {
-  0%{
+  0% {
     transform: translateX(100%);
   }
-  100%{
+  100% {
     transform: translateX(0%);
   }
 }
@@ -198,7 +198,7 @@ a {
   display: inline-block;
   position: relative;
 }
-.aside .nav-toggler.open span{
+.aside .nav-toggler.open span {
   background-color: transparent;
 }
 .aside .nav-toggler span::before {
@@ -210,7 +210,7 @@ a {
   top: -6px;
   left: 0;
 }
-.aside .nav-toggler.open span::before{
+.aside .nav-toggler.open span::before {
   transform: rotate(45deg);
   top: 0;
 }
@@ -223,7 +223,7 @@ a {
   top: 6px;
   left: 0;
 }
-.aside .nav-toggler.open span::after{
+.aside .nav-toggler.open span::after {
   transform: rotate(-45deg);
   top: 0;
 }
@@ -347,17 +347,20 @@ h3.profession {
   color: var(--text-black-700);
 }
 .about .about-content .personal-info {
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.about .about-content .personal-info .row:first-child {
+  justify-content: space-between;
+}
 .about .about-content .personal-info .info-item {
   display: block;
-  flex: 0 0 48%;
-  max-width: 50%;
+  flex: 0 0 40%;
+  max-width: 40%;
 }
 .about .about-content .personal-info .info-item p {
   font-weight: 600;
@@ -378,7 +381,7 @@ h3.profession {
 .about .about-content .buttons .btn {
   margin-top: 10px;
 }
-.about .about-content .skills {
+/* .about .about-content .skills {
   flex: 0 0 40%;
   max-width: 40%;
   margin-top: 40px;
@@ -420,8 +423,8 @@ h3.profession {
   top: -40px;
   font-weight: 400;
   line-height: 40px;
-}
-.about .about-content .education{
+} */
+.about .about-content .education {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 30px;
@@ -505,7 +508,7 @@ h3.profession {
   text-align: justify;
   color: var(--text-back-700);
 }
-.about .about-content .timeline .timeline-item ul{
+.about .about-content .timeline .timeline-item ul {
   margin-left: 15px;
 }
 .about .about-content .timeline .timeline-item ul li {
@@ -515,6 +518,64 @@ h3.profession {
   color: var(--text-back-700);
   list-style: disc;
   margin-bottom: 5px;
+}
+/* skill container Styles */
+.about .skills-section {
+  padding: 40px 0;
+}
+
+.about .skills-section .skill-text {
+  color: var(--text-black-700);
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.about .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+/* Card Styles */
+.about .skill-card {
+  width: 100%;
+  height: 150px;
+  background-color: #232329;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.about .skill-card:hover {
+  transform: scale(1.05);
+}
+
+.about .skill-card i,
+.about .skill-card img {
+  color: gray;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+.about .skill-card:hover i,
+.about .skill-card:hover img {
+  color: var(--skin-color);
+}
+
+/* Icon Specific Styling */
+.about .skill-logo {
+  width: 60px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: fill 0.3s ease, filter 0.3s ease;
+}
+
+.about .skill-card:hover .skill-logo {
+  filter: grayscale(0%);
+  fill: var(--skin-color);
 }
 /* service */
 .service .container {
@@ -677,26 +738,26 @@ h3.profession {
 
 /* Responsive */
 @media (max-width: 1199px) {
-  .section .container{
+  .section .container {
     padding-top: 70px;
   }
   .aside {
     left: -270px;
   }
-  .aside.open{
+  .aside.open {
     left: 0;
   }
-  .aside .nav-toggler{
+  .aside .nav-toggler {
     display: flex;
     left: 30px;
   }
-  .aside .nav-toggler.open{
+  .aside .nav-toggler.open {
     left: 300px;
   }
-  .section{
+  .section {
     left: 0;
   }
-  .section.open{
+  .section.open {
     left: 270px;
   }
   .about .about-content .personal-info .info-item p span {
@@ -743,14 +804,33 @@ h3.profession {
   .section .container {
     padding: 20px 0 30px;
   }
-  
+  .about .about-content .personal-info .info-item {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
 }
 @media (max-width: 575.8px) {
   .section {
     padding: 0;
     word-wrap: break-word;
   }
-  .personal-info .row {
-    justify-content: space-between;
+  .about .about-content .personal-info .info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* min width */
+@media (min-width: 640px) {
+  .about .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
