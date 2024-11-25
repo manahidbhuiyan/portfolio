@@ -82,15 +82,22 @@ function asideSectionToggler() {
 }
 
 // show more services text
-function toggleText() {
-  const text = document.querySelector(".service-text");
-  const seeMore = document.querySelector(".see-more");
+function toggleText(event) {
+  const serviceItem = event.target.closest(".service-item-inner"); // Specific parent
+  const text = serviceItem.querySelector(".service-text");
+  const seeMore = serviceItem.querySelector(".see-more");
 
   text.classList.toggle("expanded"); // Toggle the expanded class to show more text
   seeMore.textContent = text.classList.contains("expanded")
     ? "... See Less"
     : "... See More";
 }
+
+// Attach event listeners to all ".see-more" buttons
+document.querySelectorAll(".see-more").forEach((button) => {
+  button.addEventListener("click", toggleText);
+});
+
 
 // cv download
 // document.getElementById("downloadCv").addEventListener("click", function (event) {
