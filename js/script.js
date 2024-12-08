@@ -99,6 +99,27 @@ document.querySelectorAll(".see-more").forEach((button) => {
 });
 
 
+// Select the icon and color list
+const colorPickerContainer = document.querySelector('.color-picker-container');
+const colorPickerIcon = colorPickerContainer.querySelector('.color-picker-icon');
+const colorCircles = document.querySelectorAll('.color-circle');
+
+// Toggle color picker visibility
+colorPickerIcon.addEventListener('click', () => {
+    colorPickerContainer.classList.toggle('active');
+});
+
+// Change the root color variable when a color is clicked
+colorCircles.forEach(circle => {
+    circle.addEventListener('click', () => {
+        const selectedColor = circle.getAttribute('data-color');
+        document.documentElement.style.setProperty('--skin-color', selectedColor);
+        colorPickerContainer.classList.remove('active');
+    });
+});
+
+
+
 // cv download
 // document.getElementById("downloadCv").addEventListener("click", function (event) {
 //   // Prevent the default behavior

@@ -445,49 +445,6 @@ h3.profession {
 .about .about-content .buttons .btn {
   margin-top: 10px;
 }
-/* .about .about-content .skills {
-  flex: 0 0 40%;
-  max-width: 40%;
-  margin-top: 40px;
-}
-.about .about-content .skills .skill-item {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-.about .about-content .skills .skill-item h5 {
-  line-height: 40px;
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--text-black-900);
-  text-transform: capitalize;
-}
-.about .about-content .skills .skill-item .progress {
-  background-color: var(--bg-black-50);
-  height: 7px;
-  border-radius: 4px;
-  width: 100%;
-  position: relative;
-}
-
-.about .about-content .skills .skill-item {
-  margin-bottom: 30px;
-}
-.about .about-content .skills .skill-item .progress .progress-in {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  border-radius: 4px;
-  background-color: var(--skin-color);
-}
-.about .about-content .skills .skill-item .skill-percent {
-  position: absolute;
-  right: 0;
-  color: var(--text-black-900);
-  top: -40px;
-  font-weight: 400;
-  line-height: 40px;
-} */
 .about .about-content .education {
   flex: 0 0 50%;
   max-width: 50%;
@@ -583,7 +540,9 @@ h3.profession {
   list-style: disc;
   margin-bottom: 5px;
 }
+
 /* skill container Styles */
+
 .about .skills-section {
   padding: 40px 0;
 }
@@ -600,7 +559,9 @@ h3.profession {
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
+
 /* Card Styles */
+
 .about .skill-card {
   width: 100%;
   height: 150px;
@@ -619,10 +580,10 @@ h3.profession {
   font-size: 20px;
   font-weight: 500;
   color: lightgrey;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
   position: absolute;
-  bottom: 10px; /* Start below the card */
-  transform: translateY(20px); /* Slide in from below */
+  bottom: 10px;
+  transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -631,8 +592,8 @@ h3.profession {
   
 }
 .about .skill-card:hover .skill-name {
-  opacity: 1; /* Make the skill name visible */
-  transform: translateY(0); /* Move to its visible position */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about .skill-card i,
@@ -648,6 +609,7 @@ h3.profession {
 }
 
 /* Icon Specific Styling */
+
 .about .skill-logo {
   width: 60px;
   height: auto;
@@ -757,9 +719,9 @@ h3.profession {
   margin: 0 5px;
 }
 .filter-btn.active {
-  background-color: #007bff;
-  color: #fff;
+  filter: brightness(0.7);
 }
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -798,11 +760,11 @@ h3.profession {
 }
 .hover-overlay {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   width: 100%;
   height: 0;
-  background-color: rgba(255, 255, 255, 0.5); 
+  background-color: rgba(255, 255, 255, 0.8); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -811,9 +773,9 @@ h3.profession {
 }
 
 .view-details {
-  background-color: var(--skin-color);
-  color: white;
-  border: none;
+  background-color: white;
+  color: var(--skin-color);
+  border: 1px solid var(--skin-color);
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 14px;
@@ -821,8 +783,8 @@ h3.profession {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .view-details:hover {
-  background-color: white;
-  color: var(--skin-color);
+  background-color: var(--skin-color);
+  color: white;
   transform: scale(1.1);
 }
 
@@ -978,139 +940,4 @@ h3.profession {
   height: 50px;
   padding: 0 50px;
   cursor: pointer;
-}
-
-/* Responsive */
-@media (max-width: 1199px) {
-  .section .container {
-    padding-top: 70px;
-  }
-  .aside {
-    left: -270px;
-  }
-  .aside.open {
-    left: 0;
-    z-index: 111;
-  }
-  .aside .nav-toggler {
-    display: flex;
-    left: 30px;
-  }
-  .aside .nav-toggler.open {
-    left: 300px;
-  }
-  .section {
-    left: 0;
-  }
-  .section.open {
-    left: 0;
-    filter: blur(5px); /* Blurs the section */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds shadow on top */
-  }
-  .about .about-content .personal-info .info-item p span {
-    display: block;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .contact .contact-info-item,
-  .service .service-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .home .home-info {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-  .home .home-img {
-    flex: 0 0 100%;
-    max-width: 60%;
-    margin: 50px auto 0;
-  }
-  .section .container {
-    margin: 0 auto;
-  }
-  h3.hello {
-    width: 100% !important;
-  }
-}
-@media (max-width: 767.8px) {
-  .contact .contact-form .col-6,
-  .contact .contact-info-item,
-  .service .service-item,
-  .about .about-content .education,
-  .about .about-content .experience,
-  .about .about-content .skills,
-  .about .about-content .personal-info {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .section .container {
-    padding: 20px 0 30px;
-  }
-  .about .about-content .personal-info .info-item {
-    flex: 0 0 48%;
-    max-width: 48%;
-  }
-}
-@media (max-width: 575.8px) {
-  .section {
-    padding: 0;
-    word-wrap: break-word;
-  }
-  .about .about-content .personal-info .info-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .about .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* min width */
-@media (min-width: 640px) {
-  .about .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .about .skills-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-
-  .portfolio-filter {
-    padding: 20px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-  .portfolio-grid {
-    grid-template-columns: repeat(1, 1fr) !important;
-    max-width: 100%;
-  }
-  .portfolio-grid .portfolio-item {
-    max-width: 50%;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .section {
-    padding-top: 50px;
-  }
-  .portfolio-grid .portfolio-item {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 410px) {
-  .home-bottom{
-    flex-direction: column;
-  }
 }

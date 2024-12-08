@@ -16,8 +16,10 @@
   <link rel="stylesheet" href="style/css/style.css">
   <!--color css-->
   <link rel="stylesheet" href="style/css/skins/color-1.css">
+  <!--color switcher css-->
+  <link rel="stylesheet" href="style/css/color-switcher.css">
   <!--media css-->
-  <link rel="stylesheet" href="style/media.css">
+  <link rel="stylesheet" href="style/css/media.css">
 
   <title>Mahabub-portfolio</title>
 </head>
@@ -59,13 +61,16 @@
                 continuous learning and professional growth, I excel in creating seamless experiences that align with
                 project goals and enhance user satisfaction.</p>
               <div class="home-bottom">
-                <a href="./file/mahabub-cv.pdf" download target="_blank" id="downloadCv" class="cvbutton">Download CV</a>
-                
+                <a href="./file/mahabub-cv.pdf" download target="_blank" id="downloadCv" class="cvbutton">Download
+                  CV</a>
+
                 <div class="icon-container">
-                  <a href="https://www.facebook.com/manahidbhuiyan/" target="_blank" class="icon-child" data-name="Facebook">
+                  <a href="https://www.facebook.com/manahidbhuiyan/" target="_blank" class="icon-child"
+                    data-name="Facebook">
                     <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/manahidbhuiyan/" target="_blank" class="icon-child" data-name="LinkedIn">
+                  <a href="https://www.linkedin.com/in/manahidbhuiyan/" target="_blank" class="icon-child"
+                    data-name="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                   <a href="https://github.com/manahidbhuiyan" target="_blank" class="icon-child" data-name="GitHub">
@@ -513,24 +518,30 @@
             <div class="portfolio-item pad-15 vue">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img" onclick="openModal('bigBazar')">
-                  <img src="./pic/portfolio/bigBazar.png" alt="big-bazar">
+                  <img src="./pic/portfolio/bigBazar.png" alt="bigBazar-img">
                   <div class="hover-overlay">
                     <button class="view-details" onclick="openModal('bigBazar')">View Details</button>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="portfolio-item pad-15 vue">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img" onclick="openModal('amanaCity')">
-                  <img src="./pic/portfolio/amanaCity.png" alt="">
+                  <img src="./pic/portfolio/amanaCity.png" alt="amanaCity-img">
+                  <div class="hover-overlay">
+                    <button class="view-details" onclick="openModal('amanaCity')">View Details</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="portfolio-item pad-15 vue">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img" onclick="openModal('amanaAgro')">
-                  <img src="./pic/portfolio/agro.png" alt="">
+                  <img src="./pic/portfolio/agro.jpg" alt="amanaAgro-img">
+                  <div class="hover-overlay">
+                    <button class="view-details" onclick="openModal('amanaAgro')">View Details</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -538,7 +549,10 @@
             <div class="portfolio-item pad-15 bootstrap">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img" onclick="openModal('domInno')">
-                  <img src="./pic/portfolio/real-estate.png" alt="">
+                  <img src="./pic/portfolio/real-estate.png" alt="domInno-img">
+                  <div class="hover-overlay">
+                    <button class="view-details" onclick="openModal('domInno')">View Details</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -547,7 +561,10 @@
             <div class="portfolio-item pad-15 tailwind">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img" onclick="openModal('gatekeeper')">
-                  <img src="./pic/portfolio/gatekeeper.png" alt="">
+                  <img src="./pic/portfolio/gatekeeper.png" alt="gatekeeper-img">
+                  <div class="hover-overlay">
+                    <button class="view-details" onclick="openModal('gatekeeper')">View Details</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -556,7 +573,10 @@
             <div class="portfolio-item pad-15 bootstrap">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img" onclick="openModal('glucie')">
-                  <img src="./pic/portfolio/glucie.png" alt="">
+                  <img src="./pic/portfolio/glucie.png" alt="glucie-img">
+                  <div class="hover-overlay">
+                    <button class="view-details" onclick="openModal('glucie')">View Details</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -661,6 +681,20 @@
   </div>
   <!-- ========= Main Container Stop ========= -->
 
+  <div class="color-picker-container">
+    <div class="color-picker-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <h3>Theme Colors</h3>
+    <div class="color-list">
+      <div class="color-circle" data-color="#504CF2" style="background-color: #504CF2;"></div>
+      <div class="color-circle" data-color="#F25050" style="background-color: #F25050;"></div>
+      <div class="color-circle" data-color="#50F250" style="background-color: #50F250;"></div>
+      <div class="color-circle" data-color="#F2A950" style="background-color: #F2A950;"></div>
+      <div class="color-circle" data-color="#50A5F2" style="background-color: #50A5F2;"></div>
+      <div class="color-circle" data-color="#B750F2" style="background-color: #B750F2;"></div>
+    </div>
+  </div>
   <!-- Js Files -->
   <script src="js/script.js"></script>
   <!-- Optional JavaScript -->
