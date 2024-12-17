@@ -117,18 +117,3 @@ colorCircles.forEach(circle => {
         colorPickerContainer.classList.remove('active');
     });
 });
-
-
-
-// cv download
-// document.getElementById("downloadCv").addEventListener("click", function (event) {
-//   // Prevent the default behavior
-//   event.preventDefault();
-
-//   // Download the file
-//   const link = document.createElement("a");
-//   link.href = "./file/mahabub-cv.pdf";
-//   link.download = "mahabub-cv.pdf"; // Specify the file name
-//   link.click();
-
-// });
