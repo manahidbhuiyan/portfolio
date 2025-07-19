@@ -53,7 +53,7 @@
           <div class="row">
             <div class="home-info pad-15">
               <h3 class="hello">Hello, my name is <span class="name">Mahabub Alam</span></h3>
-              <h3 class="my-profession" style="padding-bottom: 5px;">I'm a <span class="typing">Jr. full stack
+              <h3 class="my-profession" style="padding-bottom: 5px;">I'm a <span class="typing">full stack
                   developer</span></h3>
               <p>An innovative thinker with 3+ years of experience in web design and over 2 years as a full-stack
                 developer, specializing in front-end development. Skilled in blending technical expertise with creative
@@ -98,7 +98,7 @@
             <div class="about-content pad-15">
               <div class="row">
                 <div class="about-text">
-                  <h3>I am Mahabub Alam Bhuiyan and <span>Junior Full Stack Developer</span></h3>
+                  <h3>I am Mahabub Alam Bhuiyan and <span>Full Stack Developer</span></h3>
                   <p> dedicated to learning new
                     technologies and solving real-world challenges. Known for strong analytical skills and a keen
                     eye for detail, I am committed to delivering high-quality work and thrive both independently
@@ -116,7 +116,13 @@
                       <p>Age : <span>25</span></p>
                     </div>
                     <div class="info-item">
-                      <p>Degree : <span>BSc</span></p>
+                      <p>Degree : <span>BSc in Computer Science</span></p>
+                    </div>
+                    <div class="info-item">
+                      <p>University : <span>Daffofil International University</span></p>
+                    </div>
+                    <div class="info-item">
+                      <p>Phone : <span>+88 01834960466</span></p>
                     </div>
                     <div class="info-item">
                       <p>Email : <span>ma.nahid960@gmail.com</span></p>
@@ -128,9 +134,6 @@
                     <div class="info-item">
                       <p>Website : <span><a href="https://www.mahabub.site/" target="_blank">mahabub.site</a></span>
                       </p>
-                    </div>
-                    <div class="info-item">
-                      <p>Phone : <span>+88 01834960466</span></p>
                     </div>
                     <div class="info-item">
                       <p>Present Address : <span>uttara, dhaka</span></p>
@@ -344,7 +347,7 @@
                         <div class="timeline-item">
                           <div class="circle-dot"></div>
                           <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> June 2024 - Present
+                            <i class="fa fa-calendar"></i> July 2024 - Present
                           </h3>
                           <h4 class="timeline-title">Full Stack Developer</h4>
                           <h4 class="timeline-sub-title">Amana Group Limited , Uttara, Dhaka</h4>
@@ -361,7 +364,7 @@
                         <div class="timeline-item">
                           <div class="circle-dot"></div>
                           <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> May 2022 - May 2024
+                            <i class="fa fa-calendar"></i> May 2022 - June 2024
                           </h3>
                           <h4 class="timeline-title">Jr. Full Stack Developer</h4>
                           <h4 class="timeline-sub-title">Amana Group Limited , Uttara, Dhaka</h4>
@@ -511,6 +514,7 @@
             <button data-filter="*" class="btn filter-btn active">All</button>
             <button data-filter=".bootstrap" class="btn filter-btn">Bootstrap</button>
             <button data-filter=".tailwind" class="btn filter-btn">Tailwind</button>
+            <button data-filter=".react" class="btn filter-btn">React</button>
             <button data-filter=".vue" class="btn filter-btn">Vue</button>
           </div>
 
@@ -545,6 +549,30 @@
                 </div>
               </div>
             </div>
+            <!-- portfolio item start -->
+            <div class="portfolio-item pad-15 react">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img" onclick="openModal('ubaky')">
+                  <img src="./pic/portfolio/ubaky.png" alt="ubaky-img">
+                  <div class="hover-overlay">
+                    <button class="view-details" onclick="openModal('ubaky')">View Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item start -->
+            <div class="portfolio-item pad-15 bootstrap">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img" onclick="openModal('carRental')">
+                  <img src="./pic/portfolio/car-rental.png" alt="carRental-img">
+                  <div class="hover-overlay">
+                    <button class="view-details" onclick="openModal('carRental')">View Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
             <!-- portfolio item start -->
             <div class="portfolio-item pad-15 bootstrap">
               <div class="portfolio-item-inner shadow-dark">
@@ -734,7 +762,19 @@
           title: "Amana Agro",
           description: "An informative website for amana agro sister concern of amana group ltd. Website is used to display brand, category, services, blog of the concern",
           requirement: "HTML, CSS, Bootstrap, JavaScript, Vue",
-          liveLink: "https://manahidbhuiyan.github.io/realState/",
+          liveLink: "https://amanaagrobd.com/en/",
+        },
+        ubaky: {
+          title: "Ubaky",
+          description: "Restaurant booking app across Iberian Peninsula. It’s a restaurant reservation system or food-tech platform, similar to OpenTable or TheFork, focused on online bookings for restaurants in Spain and Portugal.",
+          requirement: "HTML, CSS, Ant Design, React, Redux, Typscript, Node",
+          liveLink: "https://ubaky.com/home",
+        },
+        carRental: {
+          title: "Car rental",
+          description: "A Fully responsive car rental and portfolio landing page",
+          requirement: "HTML, CSS, Bootstrap, Javascript",
+          liveLink: "https://car-rental-site1.netlify.app/",
         },
         domInno: {
           title: "REAL STATE PROJECT LANDING PAGE",
